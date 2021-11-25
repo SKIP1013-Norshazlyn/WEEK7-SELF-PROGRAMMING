@@ -1,0 +1,42 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Exercise9 {
+	/*
+     * isPrime is used as flag variable. 
+     * If isPrime = 0, then number is composite
+     * else if isPrime = 1, then number is prime.
+     * Initially I have assumed the number as prime.
+     */
+
+	public static void main(String[] args) 
+	{
+		Scanner in = new Scanner(System.in);
+		int i, num, isPrime;
+	    isPrime = 1; 
+
+	    /* Input a number from user */
+	    
+	    System.out.print("Enter any number to check prime: ");
+	    num = in.nextInt();
+
+	    for(i=2; i<=num/2; i++)
+	    {
+	        // Check divisibility of num 
+	        if(num%i==0)
+	        {
+	            //Set isPrime to 0 indicating it as composite number 
+	            isPrime = 0;
+	        }
+	    }
+
+	    // If isPrime contains 1 then it is prime
+	    if(isPrime == 1 && num > 1)
+	    {
+	    	System.out.printf("%d is prime number" ,num);
+	    }
+	    else
+	    {
+	    	System.out.printf("%d is composite number" ,num);
+	    }
+	}
+}
