@@ -1,0 +1,27 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Exercise7 {
+
+	public static void main(String[] args) 
+	{
+		Scanner in = new Scanner(System.in);
+		
+		String [] name = new String [6];
+		int [] age = new int [6];
+		int i;
+		
+		for(i = 1; i < 5; i++)
+		{
+			System.out.print("Enter your name: ");
+			name [i] = in.next();
+			System.out.print("Enter your age: ");
+			age [i] = in.nextInt();
+		}
+		System.out.println("List of name and age entered: ");
+		
+		for (i =1; i < 5; i++)
+		System.out.println(name[i]+" "+age[i]);
+
+	}
+
+}
