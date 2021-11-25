@@ -1,0 +1,8 @@
+Guess My Number Game
+
+Enter a guess between 1 and 10 : 6
+Too high! Try Again
+Enter a guess between 1 and 10 : 4
+Too high! Try Again
+Enter a guess between 1 and 10 : 2
+Correct! You got it in 3 guesses!
