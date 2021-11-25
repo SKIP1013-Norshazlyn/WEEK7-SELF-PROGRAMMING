@@ -1,0 +1,24 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Exercise8 {
+//to display the pattern like right angle triangle using an asterisk.
+	public static void main(String[] args) 
+	{
+		Scanner in = new Scanner(System.in);
+		
+		int i,j,row;
+		
+		System.out.print("Input number of rows : ");
+		row = in.nextInt();
+		
+		for(i = 1; i <= row; i++)
+		{
+			for(j = 1; j <= i; j++)
+			{
+			   System.out.print("*");
+			}
+			System.out.println("");
+		}
+	}
+
+}
